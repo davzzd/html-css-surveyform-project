@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id='title'>David's Survey Form</h1>
+    <p id='description' class='firstp'>Just a basic starting project I made for fun using just html and css</p>
+    <form id='survey-form' method="post" action='http://www.example.com/formresult.asp'>
+
+      <fieldset>
+        <label for='name' id='name-label'>Name <input id='name' name='name' type='text' placeholder='Enter Your Name' required />
+        </label>
+
+        <label for='email' id='email-label'>Email<input id='email' name='email' type='email' placeholder='Enter Your Email' required />
+        </label>
+
+        <label for='number' id='number-label'>Age (optional)<input id='number' name='number' type='number' min='13' max='120' placeholder='Enter Your Age' />
+        </label>
+
+        <label for='dropdown'>Which option best describes your current role?
+          <select id='dropdown' name='dropwdown'>
+            <option value="">(select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Learner
+            </option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <p>Gender</p>
+        <label for="male"><input id="male" type="radio" name="gender" class="inline" value='1'/> Male</label>
+        <label for="female"><input id="female" type="radio" name="gender" class="inline" value='2'/> Female</label>
+      </fieldset>
+      <fieldset>
+        <p>Area of Interest:</p>
+        <label for><input type='checkbox' class="inline" value='web' >Web Development</label>
+        <label for><input type='checkbox' class="inline" value='AI' >AI and Machine Learning</label>
+        <label for><input type='checkbox' class="inline" value='gamedev'>Game Development</label>
+      </fieldset>
+      <fieldset>
+        <label for="comment">Any comments or suggestions?
+          <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" id='submit'/>
+
+    </form>
+  </body>
+
+</html>
